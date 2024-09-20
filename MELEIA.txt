@@ -1,0 +1,53 @@
+Para esse código funcionar rode ele em algum ambiente virtual python, em caso de erro tente reeinstalar as
+bibliotecas, esse é o erro mais comum:
+
+- pip install pillow / para instalar o pil
+- pip install tkinter / para instalar o tkinter
+
+
+Caso queira adicionar novos membros a lista de membros, basta modificar o membros.txt só por
+favor respeitar a ordem alfabética, pois caso não esteja em ordem talvez o código quebre.
+
+Em um futuro próximo, teremos membros demais, então talvez seja boa ideia ou exibir os nomes em duas
+colunas ou diminuir o espaço entre os nomes
+
+se rolar algum problema falar com o vinicius
+
+
+Sobre o Código:
+
+Classe Chamada: 
+A classe chamada é basicamente a parte principal do nosso aplicativo, que extende tk.Tk, que é o 
+elemento básico de criação de interface do tkinter. dentro dessa classe temos todos os métodos que  
+a chamada usa.
+
+
+Método __init__:
+É o método de inicialização de classe do tkinter, basicamente ele define as propriedades básicas da
+janela que será utilizada(tamanho, nome, cor, etc). ele também inicializa as listas que iremos utilizar
+para guardar as informações da lista de chamada e chama outro método, o criar_widgets que eu vou explicar
+logo em seguida.
+
+Método criar_widgets:
+Esse método cria os widgets presentes na nossa chamada (os dois botões, a barrinha de rolagem, a logo, o espaço 
+para os nomes,etc). Ele também define o estilo e proporções desses elementos.
+
+Método carrega_logo:
+Como o próprio nome diz, bem, esse método carrega a nossa linda logo do carcará , redimensionando ela pra caber
+na interface gráfica e posiciona ela no canto superior esquerdo.
+
+Método carrega_nomes:
+Esse método gera aquela janela pra você escolher o arquivo que você quer colocar (nesse caso a lista de todos os
+membros do ramo) e gera as caixinhas de seleção para que a gente escolha quem foi e quem não foi.
+
+Método salvar_chamada:
+O método mais importante desse código. Ele salva os nomes dos membros, levando em conta quem está marcado como
+presente. Caso esteja marcado o nome é salvo normalmente, caso não ele adiciona \textcolor{gray}{nomedapessoa}.
+Em seguida ele organiza novamente a lista para que fique de verdade em ordem alfabética(você que está lendo não
+tem ideia de quanto tempo eu levei pra resolver isso kkkkkkkkkkkkk).
+
+Loop do código (if __name__ == "__main__":):
+O finalzinho do código. Ele inicia a chamada quando você roda o código, criando um objeto da nossa classe Chamada e 
+mantendo o loop enquanto você usa esse sistema.
+
+É isso. 
