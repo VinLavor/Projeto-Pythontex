@@ -1,0 +1,1 @@
+Projeto feito utilizando Python e LaTex. Consiste em uma aplicação simples, usando a biblioteca de interface gráfica Tkinter para realizar a anotação das presenças de pessoas em reuniões, já transformando isso automaticamente em código LaTex
